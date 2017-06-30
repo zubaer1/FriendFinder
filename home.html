@@ -36,11 +36,26 @@
           <h3>Friend Finder - Node and Express Servers</h3>
           <h5>Please fill up form for Seuvey</h5>
           
-          <button type="button" class="btn btn-success btn-lg"><span><a href="https://www.name">Open form</a></span></button>
+          <button type="button" class="btn btn-success btn-lg id="survey"><span><a href="./survey.html">Open form</a></span></button>
       </div>
       </div>
   </div>
   </div>
+
+
+<!--  ************************************** -->
+
+  <script type="text/javascript">
+    $("#survey").on("click", function() {
+
+
+      $.get("/survey" , function()
+        //  $("#").show();
+ 
+      });
+    });
+  </script>
+
 
 
 </body>

@@ -26,26 +26,20 @@ app.use(bodyParser.json({
 // =============================================================
 
 app.get("/", function(request, response) {
-  // res.send("Welcome to the Star Wars Page!")
+
   response.sendFile(path.join(__dirname, "home.html"));
 });
 
-// Basic route that sends the user first to the AJAX Page
+
 app.get("/survey", function(request, response) {
-  // res.send("Welcome to the Star Wars Page!")
+ 
   response.sendFile(path.join(__dirname, "survey.html"));
 });
 
-// Search for Specific Character (or all characters) - provides JSON
-app.get("/api/:example?", function(req, res) {
-});
 
-// Create New Characters - takes in JSON input
-app.post("/api/friends", function(req, res) {
-});
 
 // Starts the server to begin listening
-// =============================================================
+
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });

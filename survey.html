@@ -27,26 +27,45 @@
 
  <div class="container">
  <div class="jumbotron">
-      <div class="row">
-          <div class="col-lg-8">
+          <h3>Friend Finder - Node and Express Servers</h3>
+              <form method="" action="">
+                  <div class="form-group">
+              <!--      <label for="nameID">Your name</label>   -->
+                    <input type="text" class="form-control" id="nameID" placeholder="Your Name" name="yourName">
+                    <br>
+          <button type="submit" class="btn btn-primary btn-md" id="question-btn"><span class="glyphicon glyphicon-search"></span>Show questions:</button> 
+                  </div>
 
-              <div class="panel panel-default">
-                    Question one 
-              </div>
+       <div class="row">
+          <div class="col-lg-7">                 
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="question" placeholder="Question" name="question">
+                  </div>          
+                </form>
           </div>
 
-          <div class="col-lg-2">
-                    <select id="number">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
+
+          <div class="col-lg-1">
+                    <select id="number"  name="number">
+                    <option value="1">10</option>
+                    <option value="2">20</option>
+                    <option value="3">30</option>
+                    <option value="4">40</option>
+                    <option value="5">50</option>
                     </select>
           </div>
       </div>
  
-                <button type="submit" class="btn btn-primary btn-md" id="search-btn"><span class="glyphicon glyphicon-search"></span>Submit</button>     
+
+
+  <!-- ************************************************* -->
+
+ 
+
+<button type="submit" class="btn btn-primary btn-md" id="search-btn"><span class="glyphicon glyphicon-search"></span>Submit</button> 
+  <!-- ************************************************* -->
+
+
   </div>
   </div>
 </body>
