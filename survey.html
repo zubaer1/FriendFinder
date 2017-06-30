@@ -20,6 +20,9 @@
    .panel{
     	text-align: center;
     }
+    #question {
+        display: none;
+      }
  
   </style>
 </head>
@@ -33,15 +36,31 @@
               <!--      <label for="nameID">Your name</label>   -->
                     <input type="text" class="form-control" id="nameID" placeholder="Your Name" name="yourName">
                     <br>
-          <button type="submit" class="btn btn-primary btn-md" id="question-btn"><span class="glyphicon glyphicon-search"></span>Show questions:</button> 
+          
+
+            <button id="start"  type="button" class="btn btn-danger">Show questions:</button> <br>
+            
                   </div>
 
+
+
+
        <div class="row">
-          <div class="col-lg-7">                 
-                  <div class="form-group">
-                    <input type="text" class="form-control" id="question" placeholder="Question" name="question">
-                  </div>          
-                </form>
+                         
+                <div class="col-md-9"  id="question">
+                   <h4><b>Question</b></h4>
+                     <button id="start1"  type="button" class="btn btn-info btn-block"><span id="span1"></span></button> <br>
+                      <button id="start2"  type="button" class="btn btn-info btn-block"><span id="span2"></span></button> <br>
+                       <button id="start3"  type="button" class="btn btn-info btn-block"><span id="span3"></span></button> <br>
+                        <button id="start4"  type="button" class="btn btn-info btn-block"><span id="span4"></span></button><br> 
+                         <button id="start5"  type="button" class="btn btn-info btn-block"><span id="span5"></span></button><br> 
+                     <button id="start6"  type="button" class="btn btn-info btn-block"><span id="span6"></span></button> <br>
+                      <button id="start7"  type="button" class="btn btn-info btn-block"><span id="span7"></span></button> <br>
+                       <button id="start8"  type="button" class="btn btn-info btn-block"><span id="span8"></span></button> <br>
+                        <button id="start9"  type="button" class="btn btn-info btn-block"><span id="span9"></span></button><br> 
+                         <button id="start10"  type="button" class="btn btn-info btn-block"><span id="span10"></span></button><br>         
+
+                </div>
           </div>
 
 
@@ -62,11 +81,60 @@
 
  
 
-<button type="submit" class="btn btn-primary btn-md" id="search-btn"><span class="glyphicon glyphicon-search"></span>Submit</button> 
+<button type="submit" class="btn btn-primary btn-md" id="submit-btn"><span class="glyphicon glyphicon-search"></span>Submit</button> 
   <!-- ************************************************* -->
 
 
   </div>
   </div>
+
+
+
+  <!-- **************script*********************************** -->
+ 
+    <script type="text/javascript">
+
+
+var q1= "Which sign does jQuery use as a shortcut for jQuery?"
+         var question = {
+              Q1 : {
+                q1: "Do they trust you?"},
+              Q2:  {
+                q1: "Do you trust them?"},
+              Q3:  {
+                q1: "Does this person love you?"},
+              Q4:  {
+                q1: "Do you trust them?"},
+              Q5:  {
+                q1: "Have they ever made you cry?" },
+              Q6 : {
+                q1: "What's your best friend's name?"},
+              Q7:  {
+                q1: "Do you guys hang out?"},
+              Q8:  {
+                q1: "Does this person love you?"},
+              Q9:  {
+                q1: "What do you like most about them?"},
+              Q10:  {
+                q1: "Do you live close to this person?" }
+            };  
+
+        $("#start").on("click", function(){
+          $("#question").show();
+          $("#question #span1").html(question.Q1.q1);
+          $("#question #span2").html(question.Q2.q1);
+          $("#question #span3").html(question.Q3.q1);
+          $("#question #span4").html(question.Q4.q1);
+          $("#question #span5").html(question.Q5.q1);
+          $("#question #span6").html(question.Q6.q1);
+          $("#question #span7").html(question.Q7.q1);
+          $("#question #span8").html(question.Q8.q1);
+          $("#question #span9").html(question.Q9.q1);
+          $("#question #span10").html(question.Q10.q1);
+        });
+  </script>     
+
+
+
 </body>
 </html>
