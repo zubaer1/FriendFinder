@@ -36,7 +36,7 @@
           <h3>Friend Finder - Node and Express Servers</h3>
           <h5>Please fill up form for Seuvey</h5>
           
-          <button type="button" class="btn btn-success btn-lg id="survey"><span><a href="./survey.html">Open form</a></span></button>
+          <button type="button" class="btn btn-success btn-lg" id="survey"><span>Open form</span></button>
       </div>
       </div>
   </div>
@@ -46,14 +46,14 @@
 <!--  ************************************** -->
 
   <script type="text/javascript">
-    $("#survey").on("click", function() {
+  	$(document).ready(function(){
+  		    $("#survey").on("click", function() {
+				//like if you click on a link (it will be saved in the session history, 
+				//so the back button will work as expected)
+				window.location.href = "http://localhost:5000/survey";
+    		});
+  	});
 
-
-      $.get("/survey" , function()
-        //  $("#").show();
- 
-      });
-    });
   </script>
 
 
